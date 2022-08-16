@@ -14,6 +14,9 @@ let users = [
      {email: 'Anna@khokhlova.ru',
      password: '1234567890',
   },
+  {email: 'iximusmmaxim@yandex.ru',
+password: '80hh80mm'
+},
   ];
   
   document.getElementById('btn').addEventListener('click', () => {
