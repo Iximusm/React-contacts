@@ -1,0 +1,16 @@
+.box{
+    box-shadow: 0px 2px 20px rgba(0, 74, 172, 0.3);
+    border-radius: 6px;
+    border: 1px solid rgb(3, 3, 248);
+}
+.box:hover {
+box-shadow:  0px 2px 20px rgba(0, 74, 172, 0.5);
+}
+h2 {
+    color: rgb(128, 105, 0);
+    text-align: center;
+}
+
+div{
+    text-align: center;
+}

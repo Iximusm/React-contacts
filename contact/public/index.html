@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app"/>
+    <link rel="stylesheet" href="./contact/styles.css">
+    <title>React App</title>
+  </head>
+  <body>
+    <div id="root">
+    <main class = "mt-5 col-12 container">
+      <div class = "justify-content-center p-5 box">
+          <div id="entrance">
+          <h2 class = "text-center">Форма авторизации</h2>
+          <div class = "p-5 row justify-content-center">
+              <div class = "col-7 mb-4">
+                  <lable class = "mb-1" for="email">Почта</lable>
+                  <input id = "email" type="email" class="form-control" placeholder = "Введите почту"/>
+                  </div>
+                  <div class = "col-7 mb-4">
+                      <lable class = "mb-1" for="passwd">Пароль</lable>
+                      <input id = "passwd" type="password" class="form-control" placeholder = "Введите пароль"/>
+              </div>
+              <div class = "col-7">
+                  <button id = "btn" style = "margin-right: 20px; color: rgb(255, 255, 255);" class = "btn btn-primary"><a href="./contacts/contacts.html">Войти</a></button>
+                  <a id = "register" style = "color: rgb(255, 2, 2); cursor: pointer;">Регистрация</a>
+                          </div>
+                        </div>
+                      </div>
+          <div id = "registration" style = "display: none;">
+      <h2 class = "text-center">Форма регистрации</h2>
+      <div class = "p-5 row justify-content-center">
+          <div class = "col-7 mb-4">
+              <lable class = "mb-1" for="email-register">Почта</lable>
+              <input id = "email-register" type="email" class="form-control" placeholder = "Введите почту"/>
+              </div>
+              <div class = "col-7 mb-4">
+                  <lable class = "mb-1" for="passwd-register">Пароль</lable>
+                  <input id = "passwd-register" type="password" class="form-control" placeholder = "Введите пароль"/>
+          </div>
+          <div class = "col-7">
+              <button style = "margin-right: 20px;" id = "btn-register" class = "btn btn-primary">Зарегестрироваться</button>
+              <a id = "enter" style = "color: rgb(0, 0, 0); cursor: pointer;">Вход</a>
+              </div>
+            </div>
+          </div>
+      </div>
+  </main>
+</div>
+  <script src="./contact/test.js"></script>
+  </body>
+</html>

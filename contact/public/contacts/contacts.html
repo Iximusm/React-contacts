@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="contacts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <form>
+    <input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Search" autofocus> 
+    <input class="button_for_turn_back" type="button" onclick="javascript: FindOnPage('text-to-find',false); return false;" value=" " title="Отменить поиск">
+    <input class="button_for_search" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;" value=" " title="Начать поиск">
+  </form>
+  <div class="phonebook">
+    <h1>Мои контакты</h1>
+    <form class="form" id="formContacts">
+      <lable for="user_fistName">
+        First Name:
+        <input id="user_fistName" type="text" name="firstName" />
+      </lable>
+  
+      <lable>
+        Last Name:
+        <input id="user_LastName" type="text" name="lastName" />
+      </lable>
+  
+      <lable>
+        Phone Number:
+        <input id="user_phoneNumber" type="number" placeholder="+7" name="phoneNumber" />
+      </lable>
+  
+      <lable>
+        email Adress:
+        <input id="user_emailAdress" type="email" name="emailAdress" />
+      </lable>
+  
+      <lable>
+        <span>Group:</span>
+        <select class="group-selection" id="selectionGroup">
+          <option value="empty"> </option>
+          <option value="family"> Family </option>
+          <option value="friends"> Friends </option>
+          <option value="work"> Work </option>
+        </select>
+      </lable>
+  
+      <lable>
+        Черный список
+        <input id="blacklist" type="checkbox" name="" />
+      </lable>
+  
+      <lable class="create-contact-button">
+        <input type="submit" value="Создать контакт">
+      </lable>
+    </form>
+  
+    <form id="filter_group_contact">
+      <fieldset>
+        <legend>Сортировать по группам:</legend>
+        <lable>
+          Family
+          <input id="filter_family" type="radio" name="filter" value="Family">
+        </lable>
+        <lable>
+          Friend
+          <input id="filter_friend" type="radio" name="filter" value="Friend">
+        </lable>
+        <lable>
+          Work
+          <input id="filter_work" type="radio" name="filter" value="Work">
+        </lable>
+        <lable>
+          Blacklist
+          <input id="filter_blacklist" type="radio" name="filter" value="Blacklist">
+        </lable>
+        <button type="reset" id="button_reset" class="btn-reset">Сбросить</button>
+      </fieldset>
+    </form>
+  
+    <div class="contacts_conteiner">
+      <h2> Список контактов </h2>
+      <div class="contact-List">
+    </div>
+    </div>
+  
+  </div>
+
+</body>
+<script src="contacts.js"></script>
+
+</html>
